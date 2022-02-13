@@ -167,3 +167,74 @@ const engineerPrompt = () => {
         menuPrompt();
     });
 };
+
+const internPrompt = () => {
+    console.log(`
+    ==========
+    Add Intern
+    ==========
+    `);
+
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'Enter the name of the intern.',
+            validate: intName => {
+                if (intName) {
+                    return true;
+                } else {
+                    console.log('Please enter their name!');
+                    return false;
+                };
+            }
+        },
+        {
+            type: 'input',
+            name: 'employeeId',
+            message: 'Enter their employee ID.',
+            validate: intId => {
+                if (intId) {
+                    return true;
+                } else {
+                    console.log('Please enter their ID!');
+                    return false;
+                };
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter their email address.',
+            validate: intEmail => {
+                if (intEmail) {
+                    return true;
+                } else {
+                    console.log('Please enter their email!');
+                    return false;
+                };
+            }
+        },
+        {
+            type: 'input',
+            name: 'school',
+            message: 'Enter their school.',
+            validate: intSchool => {
+                if (intSchool) {
+                    return true;
+                } else {
+                    console.log('Please enter their school!');
+                    return false;
+                };
+            }
+        }
+    ])
+    .then(answers => {
+        const intern = new Intern(answers.name, answers.employeeId, answers.email, answers.school);
+
+        team.push(intern);
+
+        menuPrompt();
+    });
+};
+
