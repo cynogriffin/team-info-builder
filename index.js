@@ -238,3 +238,19 @@ const internPrompt = () => {
     });
 };
 
+const buildTeam = () => {
+    console.log(`
+    ===================
+    Your team is ready!
+    ===================
+    `);
+
+    // create output directory if it doesn't exist already
+    if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir)
+    };
+    fs.writeFileSync(outputPath, generateSite(team), 'utf-8');
+};
+
+// begins the manager prompts to start the app
+managerPrompt();
