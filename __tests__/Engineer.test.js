@@ -22,7 +22,7 @@ it('should get the email from getEmail()', () => {
 });
 
 it('should get the github username from getGithub()', () => {
-    expect(engineer.getSchool()).toBe('cynogriffin');
+    expect(engineer.getGithub()).toBe('cynogriffin');
 });
 
 it('should get the role from getRole()', () => {

@@ -21,5 +21,5 @@ it('should get email from getEmail()', () => {
 });
 
 it('should get the role from getRole()', () => {
-    expect(employee.getRole).toBe('Employee');
+    expect(employee.getRole()).toBe('Employee');
 });

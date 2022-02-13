@@ -18,11 +18,11 @@ it('should get the id from getId()', () => {
 });
 
 it('should get the email from getEmail()', () => {
-    expect(manager.getEmail).toBe('griffinc6@gmail.com');
+    expect(manager.getEmail()).toBe('griffinc6@gmail.com');
 });
 
 it('should get the office number from getOfficeNumber()', () => {
-    expect(manager.getOfficeNumber).toBe('123');
+    expect(manager.getOfficeNumber()).toBe('123');
 });
 
 it('should get the role from getRole()', () => {
