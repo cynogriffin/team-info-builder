@@ -98,3 +98,72 @@ const menuPrompt = () => {
     });
 };
 
+const engineerPrompt = () => {
+    console.log(`
+    ============
+    Add Engineer
+    ============
+    `);
+
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'Enter the name for the engineer.',
+            validate: engName => {
+                if (engName) {
+                    return true;
+                } else {
+                    console.log('Please enter the name!');
+                    return false;
+                };
+            }
+        },
+        {
+            type: 'input',
+            name: 'employeeId',
+            message: "Enter the engineer's ID.",
+            validate: engId => {
+                if (engId) {
+                    return true;
+                } else {
+                    console.log('Please enter the ID number!');
+                    return false;
+                };
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter their email address.',
+            validate: engEmail => {
+                if (engEmail) {
+                    return true;
+                } else {
+                    console.log('Please enter the email address!');
+                    return false;
+                };
+            }
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Enter their GitHub username.',
+            validate: githubName => {
+                if (githubName) {
+                    return true;
+                } else {
+                    console.log('Please enter the GitHub username!');
+                    return false;
+                };
+            }
+        }
+    ])
+    .then(answers => {
+        const engineer = new Engineer(answers.name, answers.employeeId, answers.email, answers.github);
+        
+        team.push(engineer);
+
+        menuPrompt();
+    });
+};
