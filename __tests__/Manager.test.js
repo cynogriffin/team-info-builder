@@ -1,10 +1,8 @@
-const { expect } = require('@jest/globals');
-const { it } = require('jest-circus');
 const Manager = require('../lib/Manager');
 
 const manager = new Manager('cody', '5', 'griffinc6@gmail.com', '123');
 
-it('should get the costructor values from Manager', () => {
+it('should get the costructor values for Manager', () => {
     expect(manager.name).toBe('cody');
     expect(manager.id).toBe('5');
     expect(manager.email).toBe('griffinc6@gmail.com');

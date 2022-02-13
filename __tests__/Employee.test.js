@@ -2,7 +2,7 @@ const Employee = require('../lib/Employee');
 
 const employee = new Employee('cody', '5', 'griffinc6@gmail.com');
 
-it('should retrieve the values from the constructor of Employee', () => {
+it('should get the constructor values for Employee', () => {
     expect(employee.name).toBe('cody');
     expect(employee.id).toBe('5');
     expect(employee.email).toBe('griffinc6@gmail.com');
