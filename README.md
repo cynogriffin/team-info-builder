@@ -32,11 +32,11 @@ You will then be asked a series of questions to collect your information as the 
 
 Once all the necessary information has been entered and the user chooses to create the page, a confirmation message will be pronted to the command line, and then the generated HTML file will appear in a newly created output file. An example of a generated html page made with this application can be seen here: 
 
-![generated HTML page](https://github.com/cynogriffin/team-info-builder/blob/main/assets/images/site%20page.PNG)
+![generated HTML page]()
 
 Here you can view my complete video walkthrough of the usage of the application:
 
-
+![video of app creating page](https://gifs.com/gif/app-demo-LZWLGw)
 
 ## Credits
 ##### [Back to Table of Contents](#table-of-contents)
