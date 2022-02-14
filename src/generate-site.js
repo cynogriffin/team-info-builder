@@ -1,3 +1,4 @@
+// function to create the html given the team information passed into it from the prompts
 const createTeam = team => {
     // empty array to add the html cards to
     const cards = [];

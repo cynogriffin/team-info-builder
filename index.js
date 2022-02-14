@@ -6,11 +6,14 @@ const Intern = require('./lib/Intern');
 const generateSite = require('./src/generate-site');
 const path = require('path');
 
+// used later to create the output folder and generated page
 const outputDir = path.resolve(__dirname, 'output');
 const outputPath = path.join(outputDir, 'team.html');
 
+// empty array to store the team information entered through the prompts
 const team = [];
 
+// this will be the first prompt that is run
 const managerPrompt = () => {
     return inquirer.prompt([
         {
@@ -68,13 +71,14 @@ const managerPrompt = () => {
     ])
     .then(answers => {
         const manager = new Manager(answers.name, answers.employeeId, answers.email, answers.office);
-
+        // adds info to team array
         team.push(manager);
-
+        // starts the menu to ask for next options
         menuPrompt();
     })
 };
 
+// menu to run between entries
 const menuPrompt = () => {
     return inquirer.prompt([
         {
@@ -98,6 +102,7 @@ const menuPrompt = () => {
     });
 };
 
+// prompts for the different menu choices
 const engineerPrompt = () => {
     console.log(`
     ============
@@ -238,6 +243,7 @@ const internPrompt = () => {
     });
 };
 
+// creates the html page once all the team information has been collected
 const buildTeam = () => {
     console.log(`
     ===================
