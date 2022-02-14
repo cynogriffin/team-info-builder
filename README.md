@@ -24,15 +24,15 @@ In order to run and use this application, you must first install Node.js as well
 
 To use this application, after the appropriate setup is complete, you will need to run `node index` from the command line of the repo, as seen below:
 
-![node index in the command line]()
+![node index in the command line](https://github.com/cynogriffin/team-info-builder/blob/main/assets/images/run%20app.PNG)
 
 You will then be asked a series of questions to collect your information as the manager of the team. All of the information is entered into the command line. You will then be subsequently prompted for your next action where you can either choose to enter a new engineer, enter a new intern, or end the prompts and create the page with the given information. An example of the prompts can be seen below:
 
-![node prompts to collect team information]()
+![node prompts to collect team information](https://github.com/cynogriffin/team-info-builder/blob/main/assets/images/prompts.PNG)
 
 Once all the necessary information has been entered and the user chooses to create the page, a confirmation message will be pronted to the command line, and then the generated HTML file will appear in a newly created output file. An example of a generated html page made with this application can be seen here: 
 
-![generated HTML page]()
+![generated HTML page](https://github.com/cynogriffin/team-info-builder/blob/main/assets/images/site%20page.PNG)
 
 Here you can view my complete video walkthrough of the usage of the application:
 
