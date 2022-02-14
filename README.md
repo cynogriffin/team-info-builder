@@ -34,6 +34,10 @@ Once all the necessary information has been entered and the user chooses to crea
 
 ![generated HTML page]()
 
+Here you can view my complete video walkthrough of the usage of the application:
+
+
+
 ## Credits
 ##### [Back to Table of Contents](#table-of-contents)
 
