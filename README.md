@@ -36,6 +36,8 @@ Once all the necessary information has been entered and the user chooses to crea
 
 Here you can view my complete video walkthrough of the usage of the application:
 
+[Full video here](https://watch.screencastify.com/v/g6TVmsKU31OLKdL0kWoD)
+
 ![video of app creating page](https://j.gifs.com/LZWLGw.gif)
 
 ## Credits
